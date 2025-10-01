@@ -24,11 +24,17 @@ private:
     message.sesnor_id  = this->count_++;    
     message.temp = this->count_++;   
     message.air_pressure = this->count_++;  
-    message.air_speed = this->count_++;                              // CHANGE
+    message.air_speed = this->count_++;              
+    message.center.x=5   ;            // CHANGE
+    message.center.y=3    ;    
+    message.center.z=8 ;    
     RCLCPP_INFO_STREAM(this->get_logger(), "Publishing sensor id: '" << message.sesnor_id << "'");    // CHANGE
     RCLCPP_INFO_STREAM(this->get_logger(), "Publishing temp : '" << message.temp << "'");
     RCLCPP_INFO_STREAM(this->get_logger(), "Publishing pressure: '" << message.air_pressure << "'");
     RCLCPP_INFO_STREAM(this->get_logger(), "Publishing speed : '" << message.air_speed << "'");
+    RCLCPP_INFO_STREAM(this->get_logger(), "Publishing pose x: '" << message.center.x<< "'");
+    RCLCPP_INFO_STREAM(this->get_logger(), "Publishing pose y : '" << message.center.y<< "'");
+    RCLCPP_INFO_STREAM(this->get_logger(), "Publishing pose z : '" << message.center.z<< "'");
     publisher_->publish(message);
   }
   rclcpp::TimerBase::SharedPtr timer_;
