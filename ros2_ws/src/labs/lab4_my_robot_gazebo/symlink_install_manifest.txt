@@ -1,0 +1,15 @@
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/ament_index/resource_index/package_run_dependencies/lab4_my_robot_gazebo
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/ament_index/resource_index/parent_prefix_path/lab4_my_robot_gazebo
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/environment/ament_prefix_path.sh
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/environment/ament_prefix_path.dsv
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/environment/path.sh
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/environment/path.dsv
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/local_setup.bash
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/local_setup.sh
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/local_setup.zsh
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/local_setup.dsv
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/package.dsv
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/ament_index/resource_index/packages/lab4_my_robot_gazebo
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/cmake/lab4_my_robot_gazeboConfig.cmake
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/cmake/lab4_my_robot_gazeboConfig-version.cmake
+/home/omnia/ros2_ws/install/lab4_my_robot_gazebo/share/lab4_my_robot_gazebo/package.xml

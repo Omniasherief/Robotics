@@ -1,0 +1,9 @@
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/uninstall.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/lab4_my_robot_gazebo_uninstall.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/test.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/edit_cache.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/rebuild_cache.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/list_install_components.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/install.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/install/local.dir
+/home/omnia/ros2_ws/build/lab4_my_robot_gazebo/CMakeFiles/install/strip.dir
