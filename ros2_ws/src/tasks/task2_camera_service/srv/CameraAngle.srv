@@ -1,0 +1,3 @@
+float32 angle           # request
+---
+sensor_msgs/Image image #response
