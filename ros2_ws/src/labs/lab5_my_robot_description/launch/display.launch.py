@@ -25,6 +25,7 @@ def generate_launch_description():
         package="robot_state_publisher",
         executable="robot_state_publisher",
         parameters=[{"robot_description": robot_description}]
+        
     )
 
     joint_state_publisher_gui_node = Node(
@@ -40,9 +41,17 @@ def generate_launch_description():
         arguments=["-d", os.path.join(my_robot_description_dir, "rviz", "display.rviz")],
     )
 
+    simple_tf_kinematics_node = Node(
+        package="lab1_pubsub",
+        executable="simple_tf_kinematics_node",
+        name="simple_tf_kinematics_node",
+        output="screen",
+    )
+
     return LaunchDescription([
         model_arg,
         joint_state_publisher_gui_node,
         robot_state_publisher_node,
-        rviz_node
+        rviz_node,
+        simple_tf_kinematics_node
     ])

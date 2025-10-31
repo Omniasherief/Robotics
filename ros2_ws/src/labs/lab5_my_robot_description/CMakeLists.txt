@@ -7,6 +7,8 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(lab6_my_robot_controllers REQUIRED)
+
 
 install(
   DIRECTORY urdf launch meshes rviz
