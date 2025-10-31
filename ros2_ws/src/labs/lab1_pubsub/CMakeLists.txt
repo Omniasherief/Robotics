@@ -12,6 +12,10 @@ find_package(std_msgs REQUIRED)
 find_package(lab3_custom_msg_pkg REQUIRED)
 find_package(rclcpp_action REQUIRED)
 find_package(rcl_interfaces REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+
 
 add_executable(pubc src/pubc.cpp)
 ament_target_dependencies(pubc rclcpp std_msgs)
@@ -36,6 +40,16 @@ ament_target_dependencies(action_server  rclcpp std_msgs lab3_custom_msg_pkg   r
 add_executable(action_client src/action_client.cpp)
 ament_target_dependencies(action_client  rclcpp std_msgs lab3_custom_msg_pkg   rclcpp_action)
 
+add_executable(simple_tf_kinematics_node src/simple_tf_kinematics.cpp)
+ament_target_dependencies(simple_tf_kinematics_node
+  rclcpp
+  geometry_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
+)
+
+
 install(TARGETS
   pubc
   subc
@@ -44,6 +58,9 @@ install(TARGETS
   service_client
   action_server 
   action_client
+  
+  simple_tf_kinematics_node
+
   DESTINATION lib/${PROJECT_NAME}
 )
 
