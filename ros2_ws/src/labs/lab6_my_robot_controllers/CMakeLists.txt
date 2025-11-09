@@ -11,6 +11,7 @@ find_package(tf2_ros REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(Eigen3 REQUIRED)
 
+
 include_directories(include)
 include_directories(${EIGEN3_INCLUDE_DIR})
 
@@ -20,6 +21,10 @@ ament_target_dependencies(simple_controller_1 rclcpp geometry_msgs std_msgs sens
 add_executable(simple_controller_2 src/simple_controller_2.cpp)
 ament_target_dependencies(simple_controller_2 rclcpp geometry_msgs std_msgs sensor_msgs nav_msgs tf2_ros tf2 ${Eigen_LIBRARIES})
 
+
+add_executable( noisy_controller src/noisy_controller.cpp)
+ament_target_dependencies(noisy_controller rclcpp geometry_msgs std_msgs sensor_msgs nav_msgs tf2_ros tf2  ${Eigen_LIBRARIES})
+
 install(
   DIRECTORY include
   DESTINATION include
@@ -28,6 +33,7 @@ install(
 install(TARGETS
   simple_controller_1
   simple_controller_2
+  noisy_controller
   DESTINATION lib/${PROJECT_NAME}
 )
 
