@@ -10,7 +10,7 @@ add_executable(map_create src/occupancy_grid_pub.cpp)
 ament_target_dependencies(map_create rclcpp nav_msgs std_msgs)
 
 install(
-  DIRECTORY maps
+  DIRECTORY maps launch rviz
   DESTINATION share/${PROJECT_NAME}
 )
 
