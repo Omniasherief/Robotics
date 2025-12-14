@@ -192,14 +192,14 @@ def generate_launch_description():
     
     nav2_map_saver = Node(
         package="nav2_map_server",
-        executable="map_saver_server",
+        executable="map_saver_cli",
         name="map_saver_server",
         output="screen",
         parameters=[
             {"save_map_timeout": 5.0},
             {"use_sim_time": use_sim_time},
-            {"free_thresh_default": "0.196"},
-            {"occupied_thresh_default": "0.65"},
+            {"free_thresh_default": 0.196},
+            {"occupied_thresh_default": 0.65},
         ],
     )
 
