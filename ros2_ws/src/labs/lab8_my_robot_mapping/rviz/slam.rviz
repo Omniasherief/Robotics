@@ -83,6 +83,8 @@ Visualization Manager:
         map:
           odom:
             base_footprint:
+              base_footprint_noisy:
+                {}
               base_link:
                 caster_front_link:
                   {}
@@ -134,9 +136,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 0
+      Max Intensity: -999999
       Min Color: 0; 0; 0
-      Min Intensity: 0
+      Min Intensity: 999999
       Name: LaserScan
       Position Transformer: XYZ
       Selectable: true
@@ -212,7 +214,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 14.049280166625977
+      Distance: 16.16286277770996
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -227,10 +229,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5697963237762451
+      Pitch: 0.5847974419593811
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 1.615397334098816
+      Yaw: 4.152246475219727
     Saved: ~
 Window Geometry:
   Displays:
