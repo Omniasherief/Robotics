@@ -62,6 +62,13 @@ def generate_launch_description():
     )
     
    
+    tf_bridge = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        arguments=['0', '0', '0', '0', '0', '0', 'base_footprint', 'base_footprint_noisy']
+    )
+
+
     return LaunchDescription([
         gazebo,
         controller,
@@ -69,5 +76,6 @@ def generate_launch_description():
         slam,
         rviz_slam,
         teleop,
+        tf_bridge,
 
     ])
